@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  go-oms:
+    image: go-oms
+    ports:
+      - "8080:8080"
+    environment: 
+      PG_PASSWORD: ${PG_PASSWORD}
+      PG_USER: ${PG_USER}
+      PG_DBNAME: ${PG_DBNAME}
+      PG_PORT: ${PG_PORT}
+      PG_HOST: ${PG_HOST}
+    restart: unless-stopped
+    depends_on:
+      - postgres_db
+  postgres_db:
+    image: postgres:latest
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DBNAME}
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
