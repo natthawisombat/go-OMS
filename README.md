@@ -7,9 +7,9 @@ Use goroutine to manage concurrency.
 Coding supported for large number of transaction and best performance
 
 ## Installation
-on local
+# on local
 - go mod tidy
 - go run main.go
-on docker
+# on docker
 - docker-compose --env-file .env up -d --build
 ---
