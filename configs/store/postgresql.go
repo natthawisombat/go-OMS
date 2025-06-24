@@ -2,10 +2,11 @@ package store
 
 import (
 	"fmt"
-	"go-oms/entities"
 	"os"
 	"strconv"
 	"time"
+
+	"go-oms/internal/domain/entities"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

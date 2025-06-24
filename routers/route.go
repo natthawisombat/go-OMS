@@ -1,11 +1,11 @@
 package routers
 
 import (
-	adap_http "go-oms/adapters/http"
-	adap_repository "go-oms/adapters/repository"
 	"go-oms/configs"
-	"go-oms/entities"
-	usecases_orders "go-oms/usecases/orders"
+	adap_http "go-oms/internal/adapters/http"
+	adap_repository "go-oms/internal/adapters/repository"
+	"go-oms/internal/domain/entities"
+	usecases_orders "go-oms/internal/usecases/orders"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"

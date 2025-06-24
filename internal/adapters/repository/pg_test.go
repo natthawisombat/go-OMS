@@ -3,8 +3,9 @@ package adap_repository
 import (
 	"context"
 	"fmt"
-	"go-oms/entities"
 	"testing"
+
+	"go-oms/internal/domain/entities"
 
 	"github.com/glebarez/sqlite"
 	"github.com/stretchr/testify/assert"
