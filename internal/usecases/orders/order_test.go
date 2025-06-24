@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"go-oms/entities"
+	"go-oms/internal/domain/entities"
 	"net/http/httptest"
 	"testing"
 

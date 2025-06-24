@@ -2,9 +2,10 @@ package adap_http
 
 import (
 	"fmt"
-	"go-oms/entities"
-	pkglogger "go-oms/pkg/logger"
 	"strconv"
+
+	"go-oms/internal/domain/entities"
+	pkglogger "go-oms/pkg/logger"
 
 	"github.com/gofiber/fiber/v2"
 )

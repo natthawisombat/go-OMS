@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"go-oms/entities"
+	"go-oms/internal/domain/entities"
 	"go-oms/utils"
 	"os"
 	"strings"

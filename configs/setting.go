@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"go-oms/configs/store"
-	"go-oms/middlewares"
+	"go-oms/internal/middlewares"
 	"os"
 	"strings"
 	"time"

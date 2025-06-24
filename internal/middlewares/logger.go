@@ -2,9 +2,10 @@ package middlewares
 
 import (
 	"context"
-	"go-oms/entities"
-	pkglogger "go-oms/pkg/logger"
 	"time"
+
+	"go-oms/internal/domain/entities"
+	pkglogger "go-oms/pkg/logger"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
