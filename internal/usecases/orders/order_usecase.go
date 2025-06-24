@@ -1,8 +1,9 @@
 package usecases_orders
 
 import (
-	adap_http "go-oms/adapters/http"
-	"go-oms/entities"
+	adap_http "go-oms/internal/adapters/http"
+	"go-oms/internal/domain/entities"
+	domainrepo "go-oms/internal/domain/repository"
 	"strconv"
 
 	"github.com/go-playground/validator/v10"
@@ -10,11 +11,11 @@ import (
 )
 
 type Orders struct {
-	repo      Repository
+	repo      domainrepo.Repository
 	validator *validator.Validate
 }
 
-func NewOrders(repo Repository, validator *validator.Validate) *Orders {
+func NewOrders(repo domainrepo.Repository, validator *validator.Validate) *Orders {
 	return &Orders{repo: repo, validator: validator}
 }
 

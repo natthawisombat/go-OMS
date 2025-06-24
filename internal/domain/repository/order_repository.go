@@ -1,8 +1,9 @@
-package usecases_orders
+package repository
 
 import (
 	"context"
-	"go-oms/entities"
+
+	"go-oms/internal/domain/entities"
 )
 
 type Repository interface {

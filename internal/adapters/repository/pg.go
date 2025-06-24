@@ -3,8 +3,9 @@ package adap_repository
 import (
 	"context"
 	"fmt"
-	"go-oms/entities"
 	"time"
+
+	"go-oms/internal/domain/entities"
 
 	"gorm.io/gorm"
 )
