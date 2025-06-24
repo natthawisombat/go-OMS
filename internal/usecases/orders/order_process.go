@@ -1,6 +1,6 @@
 package usecases_orders
 
-import "go-oms/entities"
+import "go-oms/internal/domain/entities"
 
 func calcurateTotalAmount(order *entities.Order) error {
 	for _, v := range order.OrderItems {
